@@ -1,0 +1,28 @@
+.scrollspysite {
+  position: relative;
+  overflow: auto;
+  height: 345px;
+}
+
+#footer {
+    background: #DC143C;
+    padding: 10px;
+}
+
+.cpt {
+
+   padding-top: 29px;
+}
+
+#facebook {
+    color: darkblue;
+}
+
+#twiiter {
+    color: aqua;
+}
+
+#instagram {
+    color: #c2019a;
+}
+/*# sourceMappingURL=style.css.map */
