@@ -24,5 +24,22 @@
 
 #instagram {
     color: #c2019a;
+    
 }
+
+
+.ovl {
+    
+    opacity: 0;
+    transition-duration: 0.75s;
+}
+
+.ovl:hover{
+    opacity: 1;
+    background: rgb(136,211,219,0.5);
+}
+
+
+
+
 /*# sourceMappingURL=style.css.map */
