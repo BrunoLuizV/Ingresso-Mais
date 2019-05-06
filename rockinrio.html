@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <title>Rock In Rio | Ingresso Mais</title>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="style/css/style.css">
+    <!-- <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+     <!-- Navbar do Site -->
+  <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark">
+      
+      <div class="container">
+       
+      <a class="navbar-brand h1 mb-0" href="index.html">Ingresso Mais</a>
+
+      <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSite">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSite">
+          
+        <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+               <a class="nav-link" href="index.html">Inicio</a>  
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="index.html#eventos">Eventos</a>
+            </li>
+        </ul>
+          
+           <ul class="navbar-nav ml-auto">
+           <li class="nav-item dropdown"> 
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+                  Perfil
+               </a>
+               <div class="dropdown-menu">
+               <a class="dropdown-item" href="login.html"><i class="fas fa-user"></i> Login</a>
+                   <a class="dropdown-item" href="registro.html"><i class="fas fa-users"></i> Cadastre-se</a>
+               </div>
+               
+              </li>
+          
+          </ul>
+          
+          
+         <form class="form-inline">
+          <input class="form-control ml-4 mr-2" type="search" placeholder="Busque seu evento...">
+             <button class="btn btn-dark" type="Submit">Ok</button>
+          </form>
+      
+      </div>
+          
+          
+</div>
+      
+       </nav>
+    <!-- Banner do Evento -->
+    <div style="background: url(img/riodejaneiro.png)" class="d-flex flex-column justify-content-center text-white background-cover">
+        <!-- Descrição do evento dentro da imagem 
+        <div class="m-5 w-50 pl-4">
+            <h1 class="display-2 mt-5 font-weight-bold">Shawn Mendes</h1><br>
+            <div class="w-50 d-3">
+               <h2>World Stadium Tour</h2> 
+            </div>
+            <br>
+            <div>
+                <ul class="">
+                    <li>
+                        <p>22/07/2019 - Cuparaque (MG) </p>
+                    </li>
+                    <li>
+                        <p>23/07/2019 - Lagoa da Confusão (TO) </p>
+                    </li>
+                    <li>
+                        <p>24/07/2019 - Jardim de Piranhas (RN) </p>
+                    </li>
+                    <li>
+                        <p>25/07/2019 - Venha-Ver (RN) </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        -->
+    </div>
+    <hr>
+    <div class="container">
+        <h4>Informaçoes do evento</h4>
+        <p>Nome do Evento: Shawn Mendez Wolrd Stadium Tour</p>
+        <p>Data: 22/07/2019 a 25/07/2019</p>
+        <a href="#" data-toggle="modal" data-target="#siteModal">Classificação</a>
+        <p>Meia Entrada: Destinada à Estudantes, Idosos, Portadores de necessidades especiais, Doadores de sangue,
+            Professores e Jovens de 15 a 29 anos de idade de baixa renda, inscritos no Cadastro Único para Programas
+            Sociais do Governo Federal.</p>
+        <p> TODOS DEVIDAMENTE COMPROVADOS NA ENTRADA DO EVENTO.Verifique a legislação vigente de Meia Entrada no seu
+            Estado ou Município.</p>
+
+    </div>
+    <hr>
+    <div class="container mt-2">
+        <div class="">
+            <h4>
+                Selecionar Ingresso
+            </h4>
+            <hr>
+            <div class="card ">
+                <img class="card-image-top" src="" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">22/07/2019 - Cuparaque (MG) </h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae lectus tellus.
+                        Suspendisse
+                        nulla eros, rutrum sed euismod nec, volutpat eu mauris.
+                    </p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse"
+                        data-target="#colapse">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Area De compra -->
+
+            <div class="table">
+
+                <table class="table collapse" id="colapse">
+                    <thead>
+                        <tr>
+                            <th>Ingresso</th>
+                            <th>Qtde</th>
+                            <th>Preço</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="radio" name="Radio"
+                                        id="Radio1" value="opcao1" aria-label="...">
+                                    <label for="">Pista Simples</label>
+                                </div>
+                            </td>                            
+                            <td>
+                                <div class="form-group">
+                                    <select class="form-control" id="quantidade">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </td>
+                            
+                            <td> R$ 450,98 </td>
+                            <td>
+                                <button class="btn btn-primary">Comprar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="radio" name="Radio"
+                                        id="Radio1" value="opcao1" aria-label="...">
+                                    <label for="">Pista Premium</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <select class="form-control" id="quantidade">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td> R$ 850,98 </td>
+                            <td>
+                                <button class="btn btn-primary">Comprar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="radio" name="Radio"
+                                        id="Radio1" value="opcao1" aria-label="...">
+                                    <label for="">Camarote V.I.P</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <select class="form-control" id="quantidade">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td> R$ 1350,98 </td>
+                            <td>
+                                <button class="btn btn-primary">Comprar</button>
+                            </td>
+                    </tbody>
+                </table>
+            </div>
+            <div class="card">
+                <img class="card-image-top" src="" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">23/07/2019 - Lagoa da Confusão (TO)</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae lectus tellus.
+                        Suspendisse
+                        nulla eros, rutrum sed euismod nec, volutpat eu mauris.
+                    </p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse"
+                        data-target="#colapse2">Comprar</button>
+                </div>
+            </div>
+            <div class="table">
+                <table class="table collapse" id="colapse2">
+                    <thead>
+                        <tr>
+                            <th>Ingresso</th>
+                            <th>Qtde</th>
+                            <th>Preço</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="radio" name="Radio"
+                                        id="Radio1" value="opcao1" aria-label="...">
+                                    <label for="">Pista Simples</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <select class="form-control" id="quantidade">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td> R$ 450,98 </td>
+                            <td>
+                                <button class="btn btn-primary">Comprar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="radio" name="Radio"
+                                        id="Radio1" value="opcao1" aria-label="...">
+                                    <label for="">Pista Premium</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <select class="form-control" id="quantidade">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td> R$ 850,98 </td>
+                            <td>
+                                <button class="btn btn-primary">Comprar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="radio" name="Radio"
+                                        id="Radio1" value="opcao1" aria-label="...">
+                                    <label for="">Camarote V.I.P</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <select class="form-control" id="quantidade">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>  
+                            </td>
+                            <td> R$ 1350,98 </td>
+                            <td>
+                                <button class="btn btn-primary">Comprar</button>
+                            </td>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <img class="card-image-top" src="" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">24/07/2019 - Jardim de Piranhas (RN)</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae lectus tellus.
+                        Suspendisse
+                        nulla eros, rutrum sed euismod nec, volutpat eu mauris.
+                    </p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse"
+                        data-target="#colapse3">Comprar</button>
+                </div>
+            </div>
+            <div class="table">
+                <table class="table collapse" id="colapse3">
+                    <thead>
+                        <tr>
+                            <th>Ingresso</th>
+                            <th>Qtde</th>
+                            <th>Preço</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="radio" name="Radio"
+                                        id="Radio1" value="opcao1" aria-label="...">
+                                    <label for="">Pista Simples</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <select class="form-control" id="quantidade">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td> R$ 450,98 </td>
+                            <td>
+                                <button class="btn btn-primary">Comprar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="radio" name="Radio"
+                                        id="Radio1" value="opcao1" aria-label="...">
+                                    <label for="">Pista Premium</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <select class="form-control" id="quantidade">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td> R$ 850,98 </td>
+                            <td>
+                                <button class="btn btn-primary">Comprar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="radio" name="Radio"
+                                        id="Radio1" value="opcao1" aria-label="...">
+                                    <label for="">Camarote V.I.P</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <select class="form-control" id="quantidade">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td> R$ 1350,98 </td>
+                            <td>
+                                <button class="btn btn-primary">Comprar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="card">
+                <img class="card-image-top" src="" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">25/07/2019 - Venha-Ver (RN)</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae lectus tellus.
+                        Suspendisse
+                        nulla eros, rutrum sed euismod nec, volutpat eu mauris.
+                    </p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse"
+                        data-target="#colapse4">Comprar</button>
+                </div>
+            </div>
+            <div class="table">
+                <table class="table collapse" id="colapse4">
+                    <thead>
+                        <tr>
+                            <th>Ingresso</th>
+                            <th>Qtde</th>
+                            <th>Preço</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="radio" name="Radio"
+                                        id="Radio1" value="opcao1" aria-label="...">
+                                    <label for="">Pista Simples</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <select class="form-control" id="quantidade">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td> R$ 450,98 </td>
+                            <td>
+                                <button class="btn btn-primary">Comprar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="radio" name="Radio"
+                                        id="Radio1" value="opcao1" aria-label="...">
+                                    <label for="">Pista Premium</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <select class="form-control" id="quantidade">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td> R$ 850,98 </td>
+                            <td>
+                                <button class="btn btn-primary">Comprar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input position-static" type="radio" name="Radio"
+                                        id="Radio1" value="opcao1" aria-label="...">
+                                    <label for="">Camarote V.I.P</label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="form-group">
+                                    <select class="form-control" id="quantidade">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td> R$ 1350,98 </td>
+                            <td>
+                                <button class="btn btn-primary">Comprar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+<!-- Modal -->
+ <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Informação ao usuário!</h5>
+                <button typer="button" class="close" data-dismiss="modal">
+                 <span>&times;</span>
+                </button>
+              
+              </div>  
+              <div class="modal-body">
+                <p>Sed gravida ligula sit amet tortor fringilla, non aliquam nisl dictum. Aenean sodales, velit in fringilla bibendum, lectus arcu pulvinar erat, sed facilisis orci urna et ante. Fusce ut venenatis ipsum, non dapibus nulla. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam tempor ut sapien et porttitor. Maecenas bibendum nulla nisi, sed ultricies ante cursus non. Suspendisse ut imperdiet turpis. Donec aliquam vitae urna sed aliquet. Aenean a elit a turpis feugiat cursus. Sed ac ligula non nisi varius iaculis quis a libero. Proin egestas molestie orci, eu porttitor dolor gravida at.</p>
+              </div>
+              
+              <div class="modal-footer">
+               <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+    </div>
+<!-- Fim Modal -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
