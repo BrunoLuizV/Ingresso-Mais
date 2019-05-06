@@ -1,3 +1,11 @@
+/* cover da pagina */
+.background-cover{  
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top right;  
+    height: 600px ; 
+}
+
 .scrollspysite {
   position: relative;
   overflow: auto;
