@@ -1,9 +1,12 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" style="background-color: #6c1616;">
 <html lang="pt-br">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <title>Ingresso Mais</title>
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
@@ -14,12 +17,11 @@
     <!-- Style Font Logos -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-      
   </head>
   <body>
       
       <!-- Navbar do Site -->
-  <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-gradient-primary">
+  <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark">
       
       <div class="container">
        
@@ -37,7 +39,7 @@
                <a class="nav-link" href="index.html">Inicio</a>  
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="evento.html">Eventos</a>
+               <a class="nav-link" href="#eventos">Eventos</a>
             </li>
             <li class="nav-item">
                <a class="nav-link" href="#">Avaliações</a>
@@ -50,8 +52,8 @@
                   Perfil
                </a>
                <div class="dropdown-menu">
-               <a class="dropdown-item" href="login.html">Login</a>
-                   <a class="dropdown-item" href="registro.html">Cadastre-se</a>
+               <a class="dropdown-item" href="login.html"><i class="fas fa-user"></i> Login</a>
+                   <a class="dropdown-item" href="registro.html"><i class="fas fa-users"></i> Cadastre-se</a>
                </div>
                
               </li>
@@ -60,7 +62,7 @@
           
           
          <form class="form-inline">
-          <input class="form-control ml-4 mr-2" type="search" placeholder="Pesquisar...">
+          <input class="form-control ml-4 mr-2" type="search" placeholder="Busque seu evento...">
              <button class="btn btn-dark" type="Submit">Ok</button>
           </form>
       
@@ -73,52 +75,39 @@
       
       <!-- Slide Carousel do Site -->
       
-      <div id="carouselSite" class="carousel slide" data-ride="carousel">
+      <div id="carouselSite" class="carousel slide carousel-fade" data-ride="carousel">
           
           <ol class="carousel-indicators">
           <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
           <li data-target="#carouselSite" data-slide-to="1"></li>
-          <li data-target="#carouselSite" data-slide-to="2"></li>
-          
+          <li data-target="#carouselSite" data-slide-to="2"></li>          
           </ol>
           
           
-      <div class="carousel-inner">
+      <div class="carousel-inner" role="listbox">
           
           <div class="carousel-item active">
-          
-          <img src="img/tomorrow.png" class="img-fluid d-block w-100" >
-        <div class="carousel-caption d-none d-md-block">
-              <h1>Tomorrowland Brasil</h1>
-              <p class="lead">Adquira já seu ingresso!</p>
-              </div>
+          <a href="#" title="Visite a pagina do evento"><img src="img/tomorrow.png" class="img-fluid d-block w-100" ></a>
           </div>
           
           <div class="carousel-item">
           
-          <img src="img/Rockinrio.png" class="img-fluid d-block w-100" >
-              <div class="carousel-caption d-none d-md-block">
-              <h3>Rock In Rio</h3>
-              <p class="lead">Adquira já seu ingresso! Gaga não virá</p>
-              </div>
+              <a href="#" title="Visite a pagina do evento"><img src="img/Rockinrio.png" class="img-fluid d-block w-100" ></a>
           </div>
           
           <div class="carousel-item">
           
-          <img src="img/Lolla.png" class="img-fluid d-block w-100" >
-              <div class="carousel-caption d-none d-md-block">
-              <h3>Lollapalozza</h3>
-              <p class="lead">Adquira já seu ingresso! Tá caro</p>
-              </div>
-          </div>
+              <a href="#" title="Visite a pagina do evento"><img src="img/Lolla.png" class="img-fluid d-block w-100" ></a>
           </div>
           
-        <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+          </div>
+          
+        <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev"  style="z-index: 10">
           
           <span class="carousel-control-prev-icon"></span>
             <span class="sr-only">Anterior</span>
           </a>
-          <a class ="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+          <a class ="carousel-control-next" href="#carouselSite" role="button" data-slide="next"  style="z-index: 10">
           <span class="carousel-control-next-icon"></span>
               <span class="sr-only">Proximo</span>
           </a>
@@ -126,8 +115,10 @@
           
         </div>
 <!-- Cards do Site-->
+      
     <div class="pt-5">
-      <h1 class="text-center h1-index"><span>Eventos Em Destaque</span></h1>
+      <h1 id="eventos" class="text-center h1-index"><i class="far fa-check-circle" style="color: green"></i> <span>Veja os Eventos Em Destaque</span></h1>
+        
     </div>
 <div class="container-fluid" id="container">
     <div class="row mb-5">
@@ -138,10 +129,13 @@
               <div class="card" style="width: 18rem;">                  
                 <img class="card-img-top" src="img/L00373.png" alt="Evento" style="width:100%">
                 <div class="card-img-overlay ovl">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Comprar</button>
+                    <div class="center" style="margin-top: 65%;">
+                  <a href="#"><button type="button" class="btn btn-danger" data-dismiss="modal">Comprar</button></a>
+                    </div>
                 </div>
+                    
                 <div class="card-body">
-                    <h4 class="card-title">SAMBA SÃO JORGE</h4>
+                    <h4 class="card-title">Samba São Jorge</h4>
                 <div class="data text-left">
                     <h6 class="carrd-subtitle mb-2 text-muted"><i class="far fa-calendar-alt"></i> 19/MAIO/2019</h6>
                     <h6 class="carrd-subtitle mb-2 text-muted"><i class="far fa-clock"></i>22:00</h6>
@@ -159,17 +153,19 @@
         <div class="col-lg-0">
             <div class="view overlay">
               <div class="card" style="width: 18rem;">                  
-                <img class="card-img-top" src="img/L00373.png" alt="Evento" style="width:100%">
+                <img class="card-img-top" src="img/hortolandia.png" alt="Evento" style="width:100%">
                 <div class="card-img-overlay ovl">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Comprar</button>
+                    <div class="center" style="margin-top: 65%;">
+                  <a href="#"><button type="button" class="btn btn-danger" data-dismiss="modal">Comprar</button></a>
+                    </div>
                 </div>  
                 <div class="card-body">
-                    <h4 class="card-title">SAMBA SÃO JORGE</h4>
+                    <h4 class="card-title">Hortolândia</h4>
                 <div class="data text-left">
                     <h6 class="carrd-subtitle mb-2 text-muted"><i class="far fa-calendar-alt"></i> 19/MAIO/2019</h6>
                     <h6 class="carrd-subtitle mb-2 text-muted"><i class="far fa-clock"></i>22:00</h6>
                 </div>
-                    <p class="card-text">Venha sambar com a gente!</p>
+                    <p class="card-text">Venha festejar com a gente!</p>
                     <a href="#" class="card-link">Ingresso</a>
                 </div>
               </div>
@@ -184,14 +180,14 @@
         <div class="col-lg-0">
             <div class="view overlay">
               <div class="card" style="width: 18rem;">                  
-                <img class="card-img-top" src="img/L00373.png" alt="Evento" style="width:100%">
+                <img class="card-img-top" src="img/alok.png" alt="Evento" style="width:100%">
                 <div class="card-img-overlay ovl">
-                <div class="text-center">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Comprar</button>
+                    <div class="center" style="margin-top: 65%;">
+                  <a href="#"><button type="button" class="btn btn-danger" data-dismiss="modal">Comprar</button></a>
                     </div>
-                </div>  
+                </div>
                 <div class="card-body">
-                    <h4 class="card-title">SAMBA SÃO JORGE</h4>
+                    <h4 class="card-title">Alok Folk</h4>
                 <div class="data text-left">
                     <h6 class="carrd-subtitle mb-2 text-muted"><i class="far fa-calendar-alt"></i> 19/MAIO/2019</h6>
                     <h6 class="carrd-subtitle mb-2 text-muted"><i class="far fa-clock"></i>22:00</h6>
@@ -211,12 +207,41 @@
         <div class="col-lg-0">    
             <div class="view overlay">
               <div class="card" style="width: 18rem;">                  
-                <img class="card-img-top" src="img/L00373.png" alt="Evento" style="width:100%">
-                <div class="card-img-overlay ovl">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Comprar</button>
-                </div>  
+                <img class="card-img-top" src="img/jerry.png" alt="Evento" style="width:100%">
+                 <div class="card-img-overlay ovl">
+                    <div class="center" style="margin-top: 65%;">
+                  <a href="#"><button type="button" class="btn btn-danger" data-dismiss="modal">Comprar</button></a>
+                    </div>
+                </div>
                 <div class="card-body">
-                    <h4 class="card-title">SAMBA SÃO JORGE</h4>
+                    <h4 class="card-title">Jerry Smith</h4>
+                <div class="data text-left">
+                    <h6 class="carrd-subtitle mb-2 text-muted"><i class="far fa-calendar-alt"></i> 19/MAIO/2019</h6>
+                    <h6 class="carrd-subtitle mb-2 text-muted"><i class="far fa-clock"></i>22:00</h6>
+                </div>
+                    <p class="card-text">Jerry Smith ta chegando!</p>
+                    <a href="#" class="card-link">Ingresso</a>
+                </div>
+              </div>
+              
+            </div>
+        </div>
+        </div>    
+    </div>
+        
+        <div class="col-md-3 col-sm-12 col-xs-12">
+        <div class="pt-5">
+        <div class="col-lg-0">    
+            <div class="view overlay">
+              <div class="card" style="width: 18rem;">                  
+                <img class="card-img-top" src="img/rrio.png" alt="Evento" style="width:100%">
+                 <div class="card-img-overlay ovl">
+                    <div class="center" style="margin-top: 65%;">
+                  <a href="#"><button type="button" class="btn btn-danger" data-dismiss="modal">Comprar</button></a>
+                    </div>
+                </div> 
+                <div class="card-body">
+                    <h4 class="card-title">Rock In Rio</h4>
                 <div class="data text-left">
                     <h6 class="carrd-subtitle mb-2 text-muted"><i class="far fa-calendar-alt"></i> 19/MAIO/2019</h6>
                     <h6 class="carrd-subtitle mb-2 text-muted"><i class="far fa-clock"></i>22:00</h6>
@@ -236,37 +261,14 @@
         <div class="col-lg-0">    
             <div class="view overlay">
               <div class="card" style="width: 18rem;">                  
-                <img class="card-img-top" src="img/L00373.png" alt="Evento" style="width:100%">
-                <div class="card-img-overlay ovl">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Comprar</button>
-                </div>  
-                <div class="card-body">
-                    <h4 class="card-title">SAMBA SÃO JORGE</h4>
-                <div class="data text-left">
-                    <h6 class="carrd-subtitle mb-2 text-muted"><i class="far fa-calendar-alt"></i> 19/MAIO/2019</h6>
-                    <h6 class="carrd-subtitle mb-2 text-muted"><i class="far fa-clock"></i>22:00</h6>
+                <img class="card-img-top" src="img/lexa.png" alt="Evento" style="width:100%">
+                 <div class="card-img-overlay ovl">
+                    <div class="center" style="margin-top: 65%;">
+                  <a href="#"><button type="button" class="btn btn-danger" data-dismiss="modal">Comprar</button></a>
+                    </div>
                 </div>
-                    <p class="card-text">Venha sambar com a gente!</p>
-                    <a href="#" class="card-link">Ingresso</a>
-                </div>
-              </div>
-              
-            </div>
-        </div>
-        </div>    
-    </div>
-        
-        <div class="col-md-3 col-sm-12 col-xs-12">
-        <div class="pt-5">
-        <div class="col-lg-0">    
-            <div class="view overlay">
-              <div class="card" style="width: 18rem;">                  
-                <img class="card-img-top" src="img/L00373.png" alt="Evento" style="width:100%">
-                <div class="card-img-overlay ovl">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Comprar</button>
-                </div>  
                 <div class="card-body">
-                    <h4 class="card-title">SAMBA SÃO JORGE</h4>
+                    <h4 class="card-title">Lexa Salvador</h4>
                 <div class="data text-left">
                     <h6 class="carrd-subtitle mb-2 text-muted"><i class="far fa-calendar-alt"></i> 19/MAIO/2019</h6>
                     <h6 class="carrd-subtitle mb-2 text-muted"><i class="far fa-clock"></i>22:00</h6>
@@ -309,35 +311,166 @@
           </div>
       
       </div>
+      <div class="btt">
+        <a href="#"><i class="far fa-arrow-alt-circle-up"></i></a>
+      </div>
       
-      <!-- Rodape do site 
-      
-      <section id="footer">
-       <div class="container">
-          <div class="row">
-           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-              <a href="#"><img src="img/tentativalogo.png" alt="Ingresso Mais Logo"></a>
-              </div>
-              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-              <div class="cpt text-light text-center">
-                  <p>2019 - Ingresso Mais inc.</p>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-              <div class="ftaw text-light text-center">
-                <a id="facebook" href="#" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
-                <a id="twitter" href="#" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
-                <a id="instagram" href="#" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
-                  </div>
-              </div>
-           </div>
+      <br> 
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark" style="background-color: #6c1616;">
+
+    <div style="background-color: #293745;">
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0" style="color: #fff;">Nós conheça melhor, e entre em contato se necessário!</h6>
           </div>
-      </section>
--->
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+            <!-- Facebook -->
+            <a href="#" class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="#" class="tw-ic"><i class="fab fa-twitter white-text mr-4"></i></a>
+            <!--Instagram-->
+            <a href="#" class="ins-ic"><i class="fab fa-instagram white-text"></i></a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div style="background-color: #6c1616">
+    <div class="container text-center text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="container row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Ingresso Mais</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Nossa companhia surgiu em meados de 2019, com a intenção de melhorar a experiência dos nossos clientes
+            em seus eventos e festas preferidos.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Produtos</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">MDBootstrap</a>
+          </p>
+          <p>
+            <a href="#!">MDWordPress</a>
+          </p>
+          <p>
+            <a href="#!">BrandFlow</a>
+          </p>
+          <p>
+            <a href="#!">Bootstrap Angular</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Links de Usuário</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="login.html">Login</a>
+          </p>
+          <p>
+            <a href="registro.html">Cadastro</a>
+          </p>
+          <p>
+            <a href="#!">Avaliações</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contato</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i> Norte-Sul, SP 10012, BR</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i>contato@ingressom.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 19 978458956</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 19 39845689</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+        
+        </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="#"> Ingressomais.com.br</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+      
+      <!-- WhatsHelp.io widget -->
+    <script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "19 987640886", // WhatsApp number
+            call: "19 3865005", // Call phone number
+            call_to_action: "Entre em contato", // Call to action
+            button_color: "#E74339", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "whatsapp,call", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+   </script>
+<!-- /WhatsHelp.io widget -->
   </body>
 </html>
