@@ -6,19 +6,17 @@
     height: 600px ; 
 }
 
+
+/* Scroll da Página */
 .scrollspysite {
   position: relative;
   overflow: auto;
   height: 345px;
 }
 
+/* Style do Container */
 containersite{
     background-color: aqua;
-}
-
-
-.deep-purple.accent-2 {
-    background-color: #fff;
 }
 
  /* Footer */
@@ -27,6 +25,12 @@ containersite{
     padding: 10px;
 }
 
+/* Risco do rodapé sobre os campos */
+.deep-purple.accent-2 {
+    background-color: #fff;
+}
+
+/* Cor da fonte do rodapé */
 footer.page-footer {
     color: #fff;
     height: 82px;
@@ -71,19 +75,24 @@ footer.page-footer .footer-copyright {
     color: rgba(251,251,251,.6);
 }
 
+/* Style para o icone facebook */
 .fb-ic
 {
     color: #3b5998!important;
 }
 
+/* Style para o icone do Twitter */
 .tw-ic {
         color: #55acee!important;
 }
 
+/* Style para o icone do Instagram */
 .ins-ic{
     
     color: #c2019a!important;
 }
+
+/* Posição do footer na pagina index */
 .flex-center {
     display: -webkit-box;
     display: -webkit-flex;
@@ -99,14 +108,15 @@ footer.page-footer .footer-copyright {
     align-items: center;
     height: 100%;
 }
- /* Footer */
+ /*  Fim do Footer */
 
+/* Não sei o que é */
 .cpt {
 
    padding-top: 29px;
 }
 
-
+/* Overlay dos cads de evento */
 .ovl {
     
     opacity: 0;
@@ -117,6 +127,8 @@ footer.page-footer .footer-copyright {
     opacity: 1;
     background: rgb(35,46,59,0.7);
 }
+
+/* Fim do overlay */
 
 /* Botao de volta ao topo */
 .btt{
@@ -145,6 +157,7 @@ footer.page-footer .footer-copyright {
     color: #fff;
 }
 
+/* Fim botao */
 
 /* Navbar */
 .navbar-dark{
@@ -155,6 +168,7 @@ footer.page-footer .footer-copyright {
 .center {
     text-align: center; }
 }
+/* Fim navbar */
 
 
 
